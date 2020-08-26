@@ -1,14 +1,15 @@
+package com.casper.lab1.pojo;
 
 public class Dish {
-    private  String name;
-    private  int cost;
+    private String name;
+    private int cost;
 
-    Dish(String name, int cost){
+    public Dish(String name, int cost) {
         this.name = name;
         this.cost = cost;
     }
 
-    public  int getCost() {
+    public int getCost() {
         return cost;
     }
 

@@ -1,8 +1,17 @@
+package com.casper.lab1;
+
+import com.casper.lab1.pojo.Addition;
+import com.casper.lab1.pojo.CollectedDrink;
+import com.casper.lab1.pojo.Dish;
+import com.casper.lab1.pojo.Price;
+import com.casper.lab1.repositories.AdditonRepository;
+import com.casper.lab1.repositories.DishRepository;
+
 public class Main {
     public static void main(String[] args) {
 
         // создаем блюда, которые сможет выбрать желающий
-        Dish greеn_tee = new Dish("Чай зеленый", 190);
+        Dish green_tee = new Dish("Чай зеленый", 190);
         Dish black_tee = new Dish("Чай черный", 170);
         Dish latte = new Dish("Кофе Латте", 200);
         Dish americano = new Dish("Американо", 210);
@@ -13,7 +22,7 @@ public class Main {
         Addition vanilla = new Addition("Ваниль", 20);
 
         // добавляем напитки в хэшмапу для дальнейшего использования
-        DishRepository.hashmap_put(greеn_tee);
+        DishRepository.hashmap_put(green_tee);
         DishRepository.hashmap_put(black_tee);
         DishRepository.hashmap_put(latte);
         DishRepository.hashmap_put(americano);
