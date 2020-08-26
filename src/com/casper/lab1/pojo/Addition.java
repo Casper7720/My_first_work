@@ -1,13 +1,15 @@
-public class Addition {
-    private  String name;
-    private  int cost;
+package com.casper.lab1.pojo;
 
-    Addition(String name, int cost){
+public class Addition {
+    private String name;
+    private int cost;
+
+    public Addition(String name, int cost) {
         this.name = name;
         this.cost = cost;
     }
 
-    public  int getCost() {
+    public int getCost() {
         return cost;
     }
 
